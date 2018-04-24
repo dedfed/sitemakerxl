@@ -3,7 +3,7 @@
  * This script is a plugin for jQuery
  * Version: 1.0.4
  * Author: Nelson Polanco
- * http://unoslider.npmedia.net
+ * https://unoslider.npmedia.net
  */
 
 (function ($) {

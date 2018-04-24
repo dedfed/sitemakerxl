@@ -6,12 +6,12 @@
   "author": {
     "name": "Fred LeBlanc",
     "email": "fred@fredhq.com",
-    "url": "http://fredhq.com"
+    "url": "https://fredhq.com"
   },
   "licenses": [
     {
       "type": "BSD-3-Clause",
-      "url": "http://opensource.org/licenses/BSD-3-Clause"
+      "url": "https://opensource.org/licenses/BSD-3-Clause"
     }
   ],
   "dependencies": {
@@ -25,9 +25,9 @@
     "carousel",
     "3d"
   ],
-  "homepage": "http://fredhq.com/projects/roundabout",
-  "download": "http://fredhq.com/projects/roundabout",
-  "docs": "http://fredhq.com/projects/roundabout",
-  "demo": "http://fredhq.com/projects/roundabout#/demos",
+  "homepage": "https://fredhq.com/projects/roundabout",
+  "download": "https://fredhq.com/projects/roundabout",
+  "docs": "https://fredhq.com/projects/roundabout",
+  "demo": "https://fredhq.com/projects/roundabout#/demos",
   "bugs": "https://github.com/fredhq/roundabout/issues"
 }
