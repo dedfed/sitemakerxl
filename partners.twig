@@ -1,0 +1,155 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap">
+
+    {% include '/includes/rd-header--alt.twig' %}
+
+    <!-- SIGNUP FORM !-->
+    <section class="signup-form">
+        <div class="container">
+            <div class="partner-title">
+				{{widget('content', 'signupform-title', {"content":'<h2 class="heading--black">Website building application form</h2>'})|raw}}
+            </div>
+            <!-- FORM CONTAINER !-->
+            <div class="standout-container">
+                <!-- FORM !-->
+                <div class="left-content">
+{{widget('contactform', 'contact', {
+    'text': 'Send application',
+    'formTitle': 'Request website to be built',
+    'email': 'michiel@sitemakerxl.nl'
+  })|raw}}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY BASEKIT !-->
+    <a id="why-basekit"></a>
+    <section class="section  why-basekit-alt">
+        <div class="container">
+            {{widget('content', 'whybasekit-title', {"content":'<h2 class="space--none">Why Build Site Maker XL</h2>'})|raw}}
+            <!-- INFO BLOCKS !-->
+            <div class="section  info-blocks">
+                <div class="res-col columns span-30-31-30">
+                    <div class="column span-three-left">
+                        {{widget('content', 'whybasekit-3block1', {"content":'<h5 class="h5--space">Advantageous</h5><p>The complete building of your website can start from 299 euros</p>'})|raw}}
+                    </div>
+                    <div class="column span-three-middle">
+                        {{widget('content', 'whybasekit-3block2', {"content":'<h5 class="h5--space">Thinking with you</h5><p>Our web designers and online marketers are happy to think along with you, and give you tips on how to get even more conversion from your website.</p>'})|raw}}
+                    </div>
+                    <div class="column span-three-right">
+                        {{widget('content', 'whybasekit-3block3', {"content":'<h5 class="h5--space">Fast online</h5><p>The moment you deliver the correct materials in time, your website can be online within 1 day.</p>'})|raw}}
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <!-- CONVERSION GRAPH !-->
+            <div class="bkconversion">
+                <div class="res-col columns span-30-31-30">
+                    <div class="column span-three-left">
+                        <div class="conversion-left">
+                            {{widget('content', 'bkconversion-3block1', {"content":'<h5 class="h5--space">More conversion from your website</h5><p style = "margin-bottom: 12px">Nowadays, a website has more to offer than just the programming work.</p><p>Our designers are all true marketing gurus and help you get more out of your website with more conversion!</p>'})|raw}}
+                        </div>
+                    </div>
+                    <div class="column span-three-middle">
+                        <div class="conversion-circle">
+                            <!-- {{widget('content', 'bkconversion-3block2', {"content":'<h5>30%</h5><p>conversion or more depending on demographics</p>'})|raw}} -->
+                            <img src="{{asset('/images/conversion-graph-nl.png')}}">
+                        </div>
+                    </div>
+                    <div class="column span-three-right">
+                        <div class="conversion-right">
+                            <div class="left">
+                                {{widget('content', 'bkconversion-3block3content1', {"content":'<h5 class="h5--space">Expert Team</h5><p>We work together with more than 70 colleagues worldwide, no is no answer with us!</p>'})|raw}}
+                            </div>
+                            <div class="right">
+                                {{widget('content', 'bkconversion-3block3content2', {"content":'<h5 class="h5--space">Customer Training</h5><p>We are happy to help you with all the obstacles that may come in your path, all at no extra cost.</p>'})|raw}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEVICE SWITCHER !-->
+    <a id="customer"></a>
+    <section class="section  device-switcher">
+        <div class="container">
+            {{widget('content', 'deviceswitchertitle', {"content":'<h2 class="heading--white" style="text-align: center">Every business deserves a great, responsive site.</h2>'})|raw}}
+        </div>
+        <!-- DEVICE CONTENT !-->
+        <div class="desktop">
+            <div class="device-content">
+                <div class="res-col columns span-50-50">
+                    <div class="column span-two-left">
+                        <img src="{{asset('/images/device-liftmodule.png')}}" class="tablet-wht">
+                    </div>
+                    <div class="column span-two-right">
+                        <div class="right-text">
+                            <div class="container">
+                                {{widget('content', 'deviceswitchercontent1', {"content":'<h5 class="heading--white  space--20">Websites for all devices</h5><p class="hwhite first">The time that your customers only view your website via the PC is over, nowadays more than 80 percent view the website on a smartphone or tablet.</p><p class="hwhite">That&apos;s why all websites of Site Maker XL are responsive, which means that every website adapts to the format screen where the website is visited.</p>'})|raw}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS !-->
+    <a id="testimonials"></a>
+    <section class="section  testimonials  center">
+        <div class="container">
+            <hgroup class="section-title">
+                {{widget('content', 'testimonialstitle', {"content":'<h2 class="space--20">Our customer references</h2><p style="text-align: center">Large and small companies, we are proud of every website made by Site Maker XL.</p>'})|raw}}
+            </hgroup>
+            <!-- QUOTES !-->
+            <div class="quotes">
+                <div class="res-col columns span-30-31-30">
+                    <div class="column span-three-left">
+                        <img src="{{asset('/images/partner-logos/123-reg.png')}}" style="margin: 0 auto 2em">
+                        <div class="quote">
+                            {{widget('content', 'testimonialquote1', {"content":'<p>&quot;Very easy to keep up-to-date, and easy to maintain.&quot;</p>'})|raw}}
+                        </div>
+                        <h5>Opboxen Foundation <span>- John Schildkamp, Managing director</span></h5>
+                    </div>
+                    <div class="column span-three-middle">
+                        <img src="{{asset('/images/partner-logos/home-pl.png')}}" style="margin: 1.65em auto 2.5em">
+                        <div class="quote">
+                            {{widget('content', 'testimonialquote3', {"content":'<p>&quot;Perfect customization, good service, qualitative, helpful&quot;</p>'})|raw}}
+                        </div>
+                        <h5>JAZ BUREAU <span>- Ramazan Tekin, CEO</span></h5>
+                    </div>
+                    <div class="column span-three-right">
+                        <img src="{{asset('/images/partner-logos/uk2group.png')}}" style="margin: -0.1em auto 2em">
+                        <div class="quote">
+                            {{widget('content', 'testimonialquote4', {"content":'<p>&quot;The product is super easy and very fast I give this system a 9&quot;</p>'})|raw}}
+                        </div>
+                        <h5>mkm promotion <span>- Mark jamming, Director</span></h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    {% include '/includes/rd-footer.twig' %}
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+<div class="overlay" style="display:none;">
+    <img src="{{asset('/images/logo.png')}}" class="bk-logo">
+    <p>Your account is being created...</p>
+</div>
+
+{% endblock %}
+
+{% block templatebody %}
+
+{% endblock %}

@@ -1,0 +1,369 @@
+{% extends "layout-w-carousel.twig" %}
+
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap">
+
+	<!-- HEADER !-->
+	{% include '/includes/rd-header--alt.twig' %}
+
+	<!-- DEVELOPER SIGNUP !-->
+	<section class="cm-feature">
+
+		<div class="cm-feature-picture">
+			<img src="https://d1se4t4tzjp7kt.cloudfront.net/da84c93/templates/521a7d29b6666420e04802ea9aebd41c/images/cm-images/cm-devices.png" alt="Open-Xchange Header">
+		</div><!--{{asset('images/cm-images/cm-devices.png')}}-->
+
+		<!-- INTRO TEXT !-->
+		<div class="cm-feature-text">
+			{{widget('content', 'cm-heading-title', {"content":'<h2>CakeMail e-marketing</h2>'})|raw}}
+			{{widget('content', 'cm-heading-subtext', {"content":"<p>Including email templates <br> Detailed reports <br> Heatmaps and A/B testing</p>"})|raw}}
+			{{widget('content', 'cm-heading-button', {"content":'<a href="#" class="button lrg red">Order now!</a>'})|raw}}
+		</div>
+
+		<a href="#" id="vimeo-popup-button" onclick="return false;"><i class="fa fa-play-circle play-btn"></i></a>
+
+	</section>
+
+
+	<!-- CLIENT FRIENDLY SECTION !-->
+	<section class="client-friendly">
+		<div class="container">
+
+			<!-- CLIENT FRIENDLY TAB CONTENT !-->
+			<article id="client-friendly">
+
+				<hgroup class="center">
+					{{widget('content', 'cm-features-title', {"content":'<h2>Email marketing is simple.</h2>'})|raw}}
+					{{widget('content', 'cm-features-subtext', {"content":'<p>You want to easily track email campaigns? Discover the possibilities of CakeMail!</p>'})|raw}}
+				</hgroup>
+
+				<ul class="client-friendly-cards">
+					<li>
+						{{widget('content', 'cm-features--icon', {"content":'<i class="fa fa-pie-chart round red"></i>'})|raw}}
+						{{widget('content', 'cm-features-1-title', {"content":'<h3 class="heading--black">A/B-testing</h3>'})|raw}}
+						{{widget('content', 'cm-features-1', {"content":'<p>With A/B testing you can test multiple versions of an email you want to send. Analyze the results and send the best version to the rest of your customers.<p>'})|raw}}
+					</li>
+
+					<li>
+						{{widget('content', 'cm-features-2-icon', {"content":'<i class="fa fa-facebook round red"></i>'})|raw}}
+						{{widget('content', 'cm-features-2-title', {"content":"<h3 class='heading--black'>Social media</h3>"})|raw}}
+						{{widget('content', 'cm-features-2', {"content":"<p>Recipients of your e-mail can easily share the information with friends via social media. This gives your company extra attention free of charge.</p>"})|raw}}
+					</li>
+
+					<li>
+						{{widget('content', 'cm-features-3-icon', {"content":'<i class="fa fa-envelope-o round red"></i>'})|raw}}
+						{{widget('content', 'cm-features-3-title', {"content":'<h3 class="heading--black">Email templates</h3>'})|raw}}
+						{{widget('content', 'cm-features-3', {"content":'<p>There are many email templates available for CakeMail. You can use these templates easily and free of charge to quickly get started with your own mailing.</p>'})|raw}}
+					</li>
+				</ul>
+
+				<ul class="client-friendly-cards">
+					<li>
+						{{widget('content', 'cm-features-4-icon', {"content":'<i class="fa fa-area-chart round red"></i>'})|raw}}
+						{{widget('content', 'cm-features-4-title', {"content":"<h3 class='heading--black'>Heat maps</h3>"})|raw}}
+						{{widget('content', 'cm-features-4', {"content":'<p>Heat maps show where people click in your email. This way you get a good picture of the strengths and weaknesses of the mailing.</p>'})|raw}}
+					</li>
+
+					<li>
+						{{widget('content', 'cm-features-5-icon', {"content":'<i class="fa fa-list round red"></i>'})|raw}}
+						{{widget('content', 'cm-features-5-title', {"content":'<h3 class="heading--black">Reports</h3>'})|raw}}
+						{{widget('content', 'cm-features-5', {"content":'<p>After each mailing you can view an extensive report in CakeMail. Do you work with Google Analytics? Then this is also easy to integrate.</p>'})|raw}}
+					</li>
+
+					<li>
+						{{widget('content', 'cm-features-6-icon', {"content":'<i class="fa fa-user round red"></i>'})|raw}}
+						{{widget('content', 'cm-features-6-title', {"content":'<h3 class="heading--black">Personalization</h3>'})|raw}}
+						{{widget('content', 'cm-features-6', {"content":'<p>Personalization is a great strength of an email campaign. With CakeMail you can, for example, address customers of a newsletter in the salutation with the last name.</p>'})|raw}}
+					</li>
+				</ul>
+
+			</article>
+
+		</div>
+	</section>
+
+        <!-- Template Carousel -->
+        <div class="owl-carousel  template-carousel">
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/cm-images/Feature1.jpg')}}" alt="Cakemail Feature">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/cm-images/Feature2.jpg')}}" alt="Cakemail Feature">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/cm-images/Feature3.jpg')}}" alt="Cakemail Feature">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/cm-images/Feature4.jpg')}}" alt="Cakemail Feature">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/cm-images/Feature5.jpg')}}" alt="Cakemail Feature">
+                </div>
+            </div>
+
+        </div>
+
+	<!-- Section: Benefits -->
+	{{widget('space', 'pagespace2', {'height': '50'})|raw}}
+
+	<div class="container">
+
+		<hgroup class="center">
+			{{widget('content', 'cm-pricing-title', {"content":'<h2>Keep email marketing easy!</h2>'})|raw}}
+		</hgroup>
+
+		{{widget('space', 'pagespace3', {'height': '20'})|raw}}
+
+		<div class="smart-wrapper">
+			<div class="smart-pricing">
+				<div class="pricing-tables elegant-style three-colm">
+
+					<div class="colm">
+						<div class="colm-list">
+							<div class="pricing-header header-colored">
+								<h1 class="pricing-color-top-1 red">{{widget('content', 'cm-pricing-1-title', {'content':'500 SUBSCRIBERS'})|raw}}</h1>
+								<h2 class="pricing-color-bottom-1 red">
+									<span>{{widget('content', 'cm-pricing-1-price', {'content':'€5,00'})|raw}}</span>
+									{{widget('content', 'cm-pricing-1-term', {'content':'Per Month'})|raw}}
+								</h2>
+							</div>
+							<ul>
+								{{widget('content', 'cm-pricing-1-features', {'content':'
+									<li>500 subscribers in your address book</li>
+									<li>5000 emails per month</li>
+									<li>Contract period 1 year</li>
+								'})|raw}}
+							</ul>
+							<div class="pricing-footer">
+								{{widget('content', 'cm-pricing-1-button', {'content':'<a href="#" class="pricing-button  pricing-color1-btn red" role="button">Order now!</a>'})|raw}}
+							</div>
+						</div>
+					</div>
+
+					<div class="colm">
+						<div class="colm-list featured-package">
+							<div class="pricing-header header-colored">
+								<h1 class="pricing-color-top-2 red">{{widget('content', 'cm-pricing-2-title', {'content':'1000 SUBSCRIBERS'})|raw}}</h1>
+								<h2 class="pricing-color-bottom-2 red">
+									<span>{{widget('content', 'cm-pricing-2-price', {'content':'€9,00'})|raw}}</span>
+									{{widget('content', 'cm-pricing-2-term', {'content':'Per Month'})|raw}}
+								</h2>
+								<div class="ribbon-large">
+									<!-- <div class="ribbon-inner ribbon-inner-red">POPULAR</div> -->
+								</div>
+							</div>
+							<ul>
+								{{widget('content', 'cm-pricing-2-features', {'content':'
+									<li>1000 subscribers in your address book</li>
+									<li>10000 emails per month</li>
+									<li>Contract period 1 year</li>
+								'})|raw}}
+							</ul>
+							<div class="pricing-footer">
+								{{widget('content', 'cm-pricing-2-button', {'content':'<a href="#" class="pricing-button  pricing-color2-btn red" role="button">Order now!</a>'})|raw}}
+							</div>
+						</div>
+					</div>
+
+					<div class="colm">
+						<div class="colm-list">
+							<div class="pricing-header header-colored">
+								<h1 class="pricing-color-top-3 red">{{widget('content', 'cm-pricing-3-title', {'content':'2500 SUBSCRIBERS'})|raw}}</h1>
+								<h2 class="pricing-color-bottom-3 red">
+									<span>{{widget('content', 'cm-pricing-3-price', {'content':'€20,00'})|raw}}</span>
+									{{widget('content', 'cm-pricing-3-term', {'content':'Per Month'})|raw}}
+								</h2>
+							</div>
+							<ul>
+								{{widget('content', 'cm-pricing-3-features', {'content':'
+									<li>2500 abonnees in adresboek</li>
+									<li>25000 emails per month</li>
+									<li>Contract period 1 year</li>
+								'})|raw}}
+							</ul>
+							<div class="pricing-footer">
+								{{widget('content', 'cm-pricing-3-button', {'content':'<a href="#" class="pricing-button  pricing-color3-btn red" role="button">Order now!</a>'})|raw}}
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{{widget('space', 'pagespace4', {'height': '10'})|raw}}
+
+	<hgroup class="center">
+		{{widget('content', 'cm-pricing-subtext', {"content":'<p>Want more than 2500 subscribers? Feel free to contact us for personal advice.<br>( 085 27 33 027 )</p>'})|raw}}
+	</hgroup>
+
+	{{widget('space', 'pagespace5', {'height': '40'})|raw}}
+
+	<!-- CLIENT FRIENDLY SECTION !-->
+	<section class="client-friendly">
+		<div class="container">
+
+			<!-- CLIENT FRIENDLY TAB CONTENT !-->
+			<article id="client-friendly">
+
+				<hgroup class="center" style="margin-bottom:0;">
+					{{widget('content', 'os-title', {"content":'<h2>Also discover our other services!</h2>'})|raw}}
+				</hgroup>
+
+				<ul class="client-friendly-cards">
+					<li onclick="window.location.href='/tour';">
+						{{widget('content', 'os-smx-icon', {"content":'<i class="fa fa-desktop round large"></i>'})|raw}}
+						{{widget('content', 'os-smx-title', {"content":"<h3 class='heading--black'>Site Maker XL</h3>"})|raw}}
+						{{widget('content', 'os-smx', {"content":'<p>Looking for an affordable website that is easy to keep up with? It is possible! <u>Try it now for free</u>.</p>'})|raw}}
+					</li>
+
+					<li onclick="window.location.href='/seo';">
+						{{widget('content', 'os-seo-icon', {"content":'<i class="fa fa-search round large"></i>'})|raw}}
+						{{widget('content', 'os-seo-title', {"content":'<h3 class="heading--black">Search Engine Optimalisation</h3>'})|raw}}
+						{{widget('content', 'os-seo', {"content":'<p>With our ranking coach you can optimize your website yourself for search engines. Make sure your website is found! <u>Try 30 days for free</u>.</p>'})|raw}}
+					</li>
+
+					<li onclick="window.location.href='/ox';">
+						{{widget('content', 'os-ox-icon', {"content":'<i class="fa fa-exchange round large"></i>'})|raw}}
+						{{widget('content', 'os-ox-title', {"content":'<h3 class="heading--black">Open-Xchange</h3>'})|raw}}
+						{{widget('content', 'os-ox', {"content":'<p>Your email, calendar and contacts in one place. Work more efficiently with Open-Xchange. <u>Click here for more info</u>.</p>'})|raw}}
+					</li>
+				</ul>
+
+			</article>
+
+		</div>
+	</section>
+
+    <!-- FAQ -->
+    <section class="current-vacancies  section">
+        <div class="container">
+            <div class="res-col columns">
+                 <div class="column span-100">
+
+					<hgroup class="center" style="margin-bottom:0;">
+						{{widget('content', 'seo-faq-title', {"content":'<h2>Frequently asked questions about CakeMail.</h2>'})|raw}}
+					</hgroup>
+
+                    <ul class="faq">
+
+                        <!-- FAQ 1 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'cm-faq-question-1', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;What is the minimum contract period for CakeMail hosting?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'cm-faq-answer-1', {"content":'
+								<p>
+									The minimum contract period for CakeMail is 1 year.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 1 -->
+
+                        <!-- FAQ 2 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'cm-faq-question-2', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;How can I install CakeMail?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'cm-faq-answer-2', {"content":'
+								<p>
+									When you conclude a contract for CakeMail, the application is automatically installed for you. Via the <a href="//portal.sitemakerxl.nl">Control Panel</a> you can then log in to the CakeMail administrator.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 2 -->
+
+                        <!-- FAQ 3 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'cm-faq-question-3', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Offer Site Maker XL support for CakeMail?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'cm-faq-answer-3', {"content":'
+								<p>
+									For support you can view the support section in the application of CakeMail, do you still have problems? Then you can always contact our support team free of charge via 085 27 33 027.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 3 -->
+
+                        <!-- FAQ 4 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'cm-faq-question-4', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Why do email campaigns sent via CakeMail sometimes not enter &#39;info@&#39; mailboxes?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'cm-faq-answer-4', {"content":'
+								<p>
+									Many spam filters assume that e-mail addresses starting with for example &#39;info@&#39;, &#39;support@&#39; and &#39;sales@&#39; are not personal addresses but of a department or group within an organization. It is less common that they register for an email list. The recipients probably mark it as spam and it is more difficult to prove that the recipients have registered. In addition, these e-mail addresses are often listed on websites, making them more susceptible to automated collection or &#39;harvesting&#39; with the intended software. As a result, a list with a high percentage of job addresses is quickly suspected as a purchased or harvested list, so the recipient has not given permission to send the email. For more information, we refer you to the <a href="//blog.cakemail.com/role-account/">article</a> on the CakeMail site.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 4 -->
+
+                        <!-- FAQ 5 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'cm-faq-question-5', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;What are the conditions for using CakeMail for email marketing purposes?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'cm-faq-answer-5', {"content":'
+								<p>
+									You must comply with the Anti-Spam conditions. These can be found at <a href="//www.cakemail.com/anti-spam-policy"> the CakeMail website </a>. If you have any doubts about whether you have complied with the rules, you can contact our support team (085 27 33 027) free of charge to have this inventory taken.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 5 -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+	{{widget('space', 'pagespace6', {'height': '40'})|raw}}
+
+	<!-- FOOTER !-->
+	{% include '/includes/rd-footer.twig' %}
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+
+<!-- Vimeo video container -->
+<div id="vimeo-pop-container" style="display: none;"></div>
+
+<!-- Vimeo video container script -->
+<script>
+	function hideVimeoVideo() {
+		$('#vimeo-pop-container').fadeOut(500);
+		setTimeout(function() {
+			$('#vimeo-pop-container').html('');
+		}, 500);
+	}
+	$('#vimeo-popup-button').click(function() {
+		$('#vimeo-pop-container').html('<div onclick="hideVimeoVideo();"><span class="vimeo-close" onclick="hideVimeoVideo();"></span><iframe width="500" height="281" src="https://player.vimeo.com/video/76171549/?title=1&amp;byline=1&amp;portrait=0&amp;autoplay=1" frameborder="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen=""></iframe></div>');
+		$('#vimeo-pop-container').fadeIn(500);
+	});
+</script>
+<!--// END Vimeo video container script //-->
+
+{% endblock %}

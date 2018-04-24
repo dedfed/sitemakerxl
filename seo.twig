@@ -1,0 +1,436 @@
+{% extends "dev-layout.twig" %}
+
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap">
+
+<!-- HEADER !-->
+{% include '/includes/rd-header--alt.twig' %}
+
+    <!-- DEVELOPER SIGNUP !-->
+    <section class="seo-feature">
+
+        <!-- INTRO TEXT !-->
+        <div class="seo-feature-text">
+            {{widget('content', 'seo-heading', {"content":'<h2>Search engine optimization with</h2>'})|raw}}
+            {{widget('content', 'seo-sub-heading', {"content":'<p>Site Maker XL rankingCoach</p>'})|raw}}
+        </div>
+
+        <!-- FEATURE TABS !-->
+        <ul class="seo-feature-tabs">
+
+
+             <li class="seo-support">
+                {{widget('content', 'seo-help-heading', {"content":'<h3>Try for free</h3>'})|raw}}
+                {{widget('content', 'seo-help-subheading', {"content":'<p>Also make sure your website is at the top of Google.</p>'})|raw}}
+                {{widget('content', 'seo-help-button', {"content":'<a href="/our-partners" class="button green" target="_blank">Try for free for 30 days!</a>'})|raw}}
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- DEVELOPER LOVE SECTION !-->
+    <section class="seo-love">
+        <div class="container">
+
+            <!-- DEVELOPER LOVE TAB CONTENT !-->
+            <section class="seo-love-content clearfix">
+
+                <!-- TIME WASTING SECTION !-->
+                <article id="time-wasting">
+
+                <hgroup class="center">
+					{{widget('content', 'seo-time-wasting-header', {"content":'<h2>Keywordtool</h2>'})|raw}}
+                    {{widget('content', 'seo-time-wasing-subheading', {"content":'<p>To score well in search engines it is essential that your website is optimized for the right keywords.</p>'})|raw}}
+				</hgroup>
+
+                    <!-- TIME WASTING TABS !-->
+                    <div id="time-tabs" class="clearfix">
+                        <ul class="time-tabs-list-seo">
+                            <li>
+                                <a href="#time-content-1">
+                                    {{widget('content', 'seo-list-heading-1', {"content":'<h5>The Dashboard</h5>'})|raw}}
+                                    {{widget('content', 'seo-list-1', {"content":'<p>In the dashboard you immediately see what you can optimize further and what results you have already achieved.</p>'})|raw}}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#time-content-2">
+                                    {{widget('content', 'seo-list-heading-2', {"content":'<h5>Competition analysis</h5>'})|raw}}
+                                    {{widget('content', 'seo-list-2', {"content":'<p>With rankingCoach you get comprehensive statistics about the development of your competitors.</p>'})|raw}}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#time-content-3">
+                                    {{widget('content', 'seo-list-heading-3', {"content":'<h5>Individual assignments</h5>'})|raw}}
+                                    {{widget('content', 'seo-list-3', {"content":'<p>Step by step you complete small assignments and optimize your website for search engines.</p>'})|raw}}
+                                </a>
+                            </li>
+                            <li>
+                            <a href="#time-content-4">
+                                {{widget('content', 'seo-list-heading-4', {"content":'<h5>Regional optimization</h5>'})|raw}}
+                                {{widget('content', 'seo-list-4', {"content":'<p>With regional search engine optimization you can reach exactly the right people in your region.</p>'})|raw}}
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- TIME WASTING TAB CONTENT !-->
+                        <div class="time-tabs-content" >
+                            <div id="time-content-1">
+                                <img src="{{asset('images/developers/seo-dashboard.jpg')}}">
+                            </div>
+                            <div id="time-content-2">
+                                <img src="{{asset('images/developers/seo-keywordtool.jpg')}}">
+                            </div>
+                            <div id="time-content-3">
+                                <img src="{{asset('images/developers/seo-individueleopdrachten.jpg')}}">
+                            </div>
+                            <div id="time-content-4">
+                                <img src="{{asset('images/developers/seo-uitgebreide-analyses.jpg')}}">
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </section>
+        </div>
+    </section>
+
+
+     <!-- DEVELOPER HOSTING BENEFITS !-->
+    <section class="LightGrey seo-hosting-benefits">
+        <div class="container">
+            <hgroup class="center">
+                {{widget('content', 'seo-benefits-header', {"content":'<h2>With Site Maker XL rankingCoach, search engine optimization becomes very easy.</h2>'})|raw}}
+            </hgroup>
+
+            <!-- HOSTING BENEFITS !-->
+            <div class="hosting-benefits-cards">
+
+                <article>
+                    {{widget('content', 'seo-hosting-ico-1', {"content":'<i class="fa fa-key round green"></i>'})|raw}}
+                    {{widget('content', 'seo-hosting-1', {"content":'<h3>Keyword composition</h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'seo-hosting-ico-2', {"content":'<i class="fa fa-code round green"></i>'})|raw}}
+                    {{widget('content', 'seo-hosting-2', {"content":'<h3>Metadata optimization</h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'seo-hosting-ico-3', {"content":'<i class="fa fa-link round green"></i>'})|raw}}
+                    {{widget('content', 'seo-hosting-3', {"content":'<h3>Linkbuilding Expansion</h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'seo-hosting-ico-4', {"content":'<i class="fa fa-globe round green"></i>'})|raw}}
+                    {{widget('content', 'seo-hosting-4', {"content":'<h3>Regional SEO</h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'seo-hosting-ico-5', {"content":'<i class="fa fa-heartbeat round green"></i>'})|raw}}
+                    {{widget('content', 'seo-hosting-5', {"content":'<h3>Competition analysis<h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'seo-hosting-ico-6', {"content":'<i class="fa fa-lock round green"></i>'})|raw}}
+                    {{widget('content', 'seo-hosting-6', {"content":'<h3>Trusted by Hundreds of Companies</h3>'})|raw}}
+                </article>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FLEXIBILITY CONTROL SECTION !-->
+    <section class="flexibility-control">
+        <div class="container">
+
+        <!-- FLEXIBILITY TAB CONTENT !-->
+        <article class="res-col columns span-30-70" id="flexibility">
+
+        <hgroup class="center">
+            {{widget('content', 'seo-flexibility-header', {"content":'<h2>The easiest way to success.</h2>'})|raw}}
+            {{widget('content', 'seo-flexbility-subheader', {"content":'<p>rankingCoach is structured in such a way that even beginners can easily optimize their website step by step. If you have executed one assignment, the following will be made available to you. The tool is powerful and at the same time offers a very clear interface. With rankingCoach you can perform 60 assignments divided over four themes and thus improve your website.</p>'})|raw}}
+        </hgroup>
+
+            <!-- FLEXIBILITY THREE SIMPLE STEPS !-->
+            <ul class="res-col columns span-30-31-30 seo-steps">
+                <li class="column span-three-left">
+                    <img src="{{asset('images/developers/seo-feature-1.jpg')}}">
+                    {{widget('content', 'seo-flex-steps-1', {"content":'<h3><b>Help with</b>optimization</h3>'})|raw}}
+                    {{widget('content', 'seo-flex-list-1', {"content":'<p>You get clear, easy to perform assignments from rankingCoach with video explanation that help you step by step to get more visitors to your website.</p>'})|raw}}
+                </li>
+                <li class="column span-three-middle">
+                    <img src="{{asset('images/developers/seo-feature-2.jpg')}}">
+                    {{widget('content', 'seo-flex-steps-2', {"content":'<h3>Keep an eye on your <b>results</b>!</h3>'})|raw}}
+                    {{widget('content', 'seo-flex-list-2', {"content":'<p>With rankingCoach you can monitor your results in real time, you also receive a weekly report with the achieved results from you and your competitors.</p>'})|raw}}
+                </li>
+                <li class="column span-three-right">
+                    <img src="{{asset('images/developers/seo-feature-3.jpg')}}">
+                    {{widget('content', 'seo-flex-steps-3', {"content":'<h3>Unbelievable <b>advantageous</b></h3>'})|raw}}
+                    {{widget('content', 'seo-flex-list-3', {"content":'<p>With rankingCoach everyone can develop a well thought-out SEO strategy, without having to call in an expensive agency! Test ranking Coach now free for 30 days, during which you can cancel at any time during the test period.</p>'})|raw}}
+                </li>
+            </ul>
+        </article>
+
+        </div>
+    </section>
+
+
+    <!-- CLIENT FRIENDLY SECTION !-->
+    <section class="client-friendly">
+        <div class="container">
+
+            <!-- CLIENT FRIENDLY TAB CONTENT !-->
+            <article id="client-friendly">
+
+                <hgroup class="center">
+                    {{widget('content', 'seo-client-header', {"content":'<h2>Do SEO yourself - without prior knowledge!</h2>'})|raw}}
+                    {{widget('content', 'seo-client-header-subheading', {"content":'<p>Use the tools of the market leader and optimize your website for search engines such as Google and Bing. Step by step, in easy to follow instructions. Through clear instruction videos and detailed instructions, you know exactly what you need to do to improve your website.</p>'})|raw}}
+                </hgroup>
+
+            <ul class="client-friendly-cards">
+                <li>
+                    {{widget('content', 'seo-client-list-ico-1', {"content":'<i class="fa fa-star-o round green"></i>'})|raw}}
+                    {{widget('content', 'seo-client-list-heading-1', {"content":'<h3 class="heading--black">Your website at the very front</h3>'})|raw}}
+                    {{widget('content', 'seo-client-list-1', {"content":'<p>Follow the assignments and instructions prepared by rankingCoach especially for your website, and make sure that your website is found better with all common search engines.</p>'})|raw}}
+                </li>
+
+                <li>
+                    {{widget('content', 'seo-client-list-ico-2', {"content":'<i class="fa fa-line-chart round green"></i>'})|raw}}
+                    {{widget('content', 'seo-client-list-heading-2', {"content":'<h3 class="heading--black">Easily capture better positions</h3>'})|raw}}
+                    {{widget('content', 'seo-client-list-2', {"content":'<p>Normally, carrying out a few assignments will result in better positions with search engines in a short time, which you clearly notice in the number of visitors to your website.</p>'})|raw}}
+                </li>
+
+                <li>
+                    {{widget('content', 'seo-client-list-ico-3', {"content":'<i class="fa fa-money round green"></i>'})|raw}}
+                    {{widget('content', 'seo-client-list-heading-3', {"content":'<h3 class="heading--black">No expensive marketing agency</h3>'})|raw}}
+                    {{widget('content', 'seo-client-list-3', {"content":'<p>Stop investing hundreds of euros in expensive marketing agencies and see for yourself how fast your website is rising in Google</p>'})|raw}}
+                </li>
+            </ul>
+
+            <ul class="client-friendly-cards">
+                <li>
+                    {{widget('content', 'seo-client-list-ico-4', {"content":'<i class="fa fa-sliders round green"></i>'})|raw}}
+                    {{widget('content', 'seo-client-list-heading-4', {"content":'<h3 class="heading--black">Yourself at the controls</h3>'})|raw}}
+                    {{widget('content', 'seo-client-list-4', {"content":'<p>Follow all steps, including multimedia support.</p>'})|raw}}
+                </li>
+
+                <li>
+                    {{widget('content', 'seo-client-list-ico-5', {"content":'<i class="fa fa-life-ring round green"></i>'})|raw}}
+                    {{widget('content', 'seo-client-list-heading-5', {"content":'<h3 class="heading--black">Free support</h3>'})|raw}}
+                    {{widget('content', 'seo-client-list-5', {"content":'<p>Do you have questions? Our free and individual support will help you further!</p>'})|raw}}
+                </li>
+
+                <li>
+                    {{widget('content', 'seo-client-list-ico-6', {"content":'<i class="fa fa-pie-chart round green"></i>'})|raw}}
+                    {{widget('content', 'seo-client-list-heading-6', {"content":'<h3 class="heading--black">More sales</h3>'})|raw}}
+                    {{widget('content', 'seo-client-list-6', {"content":'<p>More visitors are more sales! We are happy to help you.</p>'})|raw}}
+                </li>
+            </ul>
+        </article>
+
+    </div>
+</section>
+
+   <!-- Section: Benefits -->
+    <div class="section  benefits  center">
+        <div class="slide-bottom">
+            <div class="container-sml">
+
+                <!-- Section Text -->
+                {{widget('content', 'seo-start-title', {"content":'<h2 class="space--40">Do you also want to score high in Google?</h2>'})|raw}}
+                {{widget('content', 'seo-start-button', {"content":'<a href="/partners" class="button lrg green">Try for free now!</a>'})|raw}}
+
+            </div>
+        </div>
+    </div>
+
+	<!-- CLIENT FRIENDLY SECTION !-->
+	<section class="client-friendly">
+		<div class="container">
+
+			<!-- CLIENT FRIENDLY TAB CONTENT !-->
+			<article id="client-friendly">
+
+				<hgroup class="center" style="margin-bottom:0;">
+					{{widget('content', 'os-title', {"content":'<h2>Also discover our other services!</h2>'})|raw}}
+				</hgroup>
+
+				<ul class="client-friendly-cards">
+					<li onclick="window.location.href='/tour';">
+						{{widget('content', 'os-smx-icon', {"content":'<i class="fa fa-desktop round large"></i>'})|raw}}
+						{{widget('content', 'os-smx-title', {"content":'<h3 class="heading--black">Site Maker XL</h3>'})|raw}}
+						{{widget('content', 'os-smx', {"content":'<p>Looking for an affordable website that is easy to keep up with? It is possible! <u>Try it now for free</u>.</p>'})|raw}}
+					</li>
+
+					<li onclick="window.location.href='/ox';">
+						{{widget('content', 'os-ox-icon', {"content":'<i class="fa fa-exchange round large"></i>'})|raw}}
+						{{widget('content', 'os-ox-title', {"content":"<h3 class='heading--black'>Open-Xchange</h3>"})|raw}}
+						{{widget('content', 'os-ox', {"content":'<p>Your email, calendar and contacts in one place. Work more efficiently with Open-Xchange. <u>Click here for more info</u>.</p>'})|raw}}
+					</li>
+
+					<li onclick="window.location.href='/cakemail';">
+						{{widget('content', 'os-cm-icon', {"content":'<i class="fa fa-envelope-o round large"></i>'})|raw}}
+						{{widget('content', 'os-cm-title', {"content":'<h3 class="heading--black">Email marketing</h3>'})|raw}}
+						{{widget('content', 'os-cm', {"content":'<p>With <u>email marketing</u> you can create and send your newsletters yourself. Choose a free template, change the content and send your newsletter easily.</p>'})|raw}}
+					</li>
+				</ul>
+
+			</article>
+
+		</div>
+	</section>
+
+    <!-- FAQ -->
+    <section class="current-vacancies  section">
+        <div class="container">
+            <div class="res-col columns">
+                 <div class="column span-100">
+
+					<hgroup class="center" style="margin-bottom:0;">
+						{{widget('content', 'seo-faq-title', {"content":'<h2>Frequently asked questions about SEO.</h2>'})|raw}}
+					</hgroup>
+
+                    <ul class="faq">
+
+                        <!-- FAQ 1 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'seo-faq-question-1', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;What is rankingCoach?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'seo-faq-answer-1', {"content":'
+								<p>
+                                    rankingCoach is online marketing software that guides you step by step in the optimization of your website. rankingCoach helps you understand online marketing by creating a customized action plan, consisting of small easy assignments for your website. With the help of the weekly result report you can understand the performance of your website and increase the performance step by step.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 1 -->
+
+                        <!-- FAQ 2 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'seo-faq-question-2', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;What makes rankingCoach different from online marketing tools?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'seo-faq-answer-2', {"content":'
+								<p>
+                                    rankingCoach generates an adapted online marketing strategy for your website. Unlike other tools, you receive an action plan that is precisely tailored to your business and your online marketing goals.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 2 -->
+
+                        <!-- FAQ 3 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'seo-faq-question-3', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Is my action plan really tailored for my website?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'seo-faq-answer-3', {"content":'
+								<p>
+                                    With the help of your previous website, your keywords, sector and data on coverage, rankingCoach determines an online marketing strategy that is precisely tailored to your company. This way you receive assignments and tips that perfectly match your objectives: from keywords with the best performance to the best links in your sector.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 3 -->
+
+                        <!-- FAQ 4 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'seo-faq-question-4', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Do I have to be an online marketing expert or programmer to use rankingCoach?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'seo-faq-answer-4', {"content":'
+								<p>
+                                    Not at all! rankingCoach gradually gives you all the necessary knowledge to optimize your website.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 4 -->
+
+                        <!-- FAQ 5 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'seo-faq-question-5', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Do I need to know HTML to use rankingCoach?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'seo-faq-answer-5', {"content":'
+								<p>
+                                    The individual assignments are so easy that everyone can execute them &#8212; even without any knowledge of HTML.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 5 -->
+
+                        <!-- FAQ 6 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'seo-faq-question-6', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Do I have to download other programs to use rankingCoach?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'seo-faq-answer-6', {"content":'
+								<p>
+                                    rankingCoach is &#39;web-based&#39;, this means that no installation is required in advance to run the software, the advantage of this is that you can use this software at any time and at any location. You can easily use your account from any computer.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 6 -->
+
+                        <!-- FAQ 7 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'seo-faq-question-7', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;How long does it take to optimize my website with rankingCoach?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'seo-faq-answer-7', {"content":'
+								<p>
+                                    You can complete individual assignments as quickly as you want. With many assignments it is shown how much time it will probably take, so that you can optimally divide your time.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 7 -->
+
+                        <!-- FAQ 8 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'seo-faq-question-8', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;What if I need more time? Can I work more slowly?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'seo-faq-answer-8', {"content":'
+								<p>
+                                    You can continue at your own pace. The strategy is uniquely developed for your website and can be executed at any time, whenever it suits you.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 8 -->
+
+                        <!-- FAQ 9 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'seo-faq-question-9', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;What if I do not understand the assignment?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'seo-faq-answer-9', {"content":'
+								<p>
+                                    rankingCoach offers you simple explanations for each assignment so that you can quickly run through individual assignments. Still not coming forward? Then you can always contact our support team via 085 27 33 027.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 9 -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER !-->
+    {% include '/includes/rd-footer.twig' %}
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+{% endblock %}

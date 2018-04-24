@@ -1,0 +1,409 @@
+{% extends "layout-w-carousel.twig" %}
+
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap">
+
+	<!-- HEADER !-->
+	{% include '/includes/rd-header--alt.twig' %}
+
+	<!-- DEVELOPER SIGNUP !-->
+	<section class="ox-feature">
+
+		<div class="ox-feature-picture">
+			<img src="{{asset('images/ox-images/ox-devices.png')}}" alt="Open-Xchange Header">
+		</div>
+
+		<!-- INTRO TEXT !-->
+		<div class="ox-feature-text">
+			{{widget('content', 'ox-heading-title', {"content":'<h2>Open-Xchange Premium</h2>'})|raw}}
+			{{widget('content', 'ox-heading-subtext', {"content":"<p>Shared calendars, contacts and documents<br>Automatic synchronization with smartphones<br>5 GB mailbox and 2 GB shared storage</p>"})|raw}}
+			{{widget('content', 'ox-heading-button', {"content":'<a href="https://portal.sitemakerxl.nl/cart.php?a=add&pid=25" class="button lrg blue">Order now!</a>'})|raw}}
+		</div>
+
+		<a href="#" id="vimeo-popup-button" onclick="return false;"><i class="fa fa-play-circle play-btn"></i></a>
+
+	</section>
+
+
+	<!-- CLIENT FRIENDLY SECTION !-->
+	<section class="client-friendly">
+		<div class="container">
+
+			<!-- CLIENT FRIENDLY TAB CONTENT !-->
+			<article id="client-friendly">
+
+				<hgroup class="center">
+					{{widget('content', 'ox-features-title', {"content":'<h2>Discover the possibilities!</h2>'})|raw}}
+					{{widget('content', 'ox-features-subtext', {"content":'<p>Work more efficiently? It&apos;s possible! Discover the benefits of Open-Xchange Premium.</p>'})|raw}}
+				</hgroup>
+
+				<ul class="client-friendly-cards">
+					<li>
+						{{widget('content', 'ox-features--icon', {"content":'<i class="fa fa-files-o round blue"></i>'})|raw}}
+						{{widget('content', 'ox-features-1-title', {"content":'<h3 class="heading--black">Shared documents</h3>'})|raw}}
+						{{widget('content', 'ox-features-1', {"content":'<p>With the InfoStore of Open-Xchange Premium you have a central place to store your documents. Share and manage your documents easily.<p>'})|raw}}
+					</li>
+
+					<li>
+						{{widget('content', 'ox-features-2-icon', {"content":'<i class="fa fa-calendar round blue"></i>'})|raw}}
+						{{widget('content', 'ox-features-2-title', {"content":"<h3 class='heading--black'>Team agendas</h3>"})|raw}}
+						{{widget('content', 'ox-features-2', {"content":"<p>Thanks to the shared agenda function, it is possible for colleagues to view each other's agenda, schedule meetings, share tasks and synchronize contacts.</p>"})|raw}}
+					</li>
+
+					<li>
+						{{widget('content', 'ox-features-3-icon', {"content":'<i class="fa fa-refresh round blue"></i>'})|raw}}
+						{{widget('content', 'ox-features-3-title', {"content":'<h3 class="heading--black">Continuous synchronization</h3>'})|raw}}
+						{{widget('content', 'ox-features-3', {"content":'<p>Open-Xchange Premium is suitable for use on your smartphone and is therefore always available. The push function ensures a continuous synchronization of email.</p>'})|raw}}
+					</li>
+				</ul>
+
+				<ul class="client-friendly-cards">
+					<li>
+						{{widget('content', 'ox-features-4-icon', {"content":'<i class="fa fa-inbox round blue"></i>'})|raw}}
+						{{widget('content', 'ox-features-4-title', {"content":"<h3 class='heading--black'>All mail in one place</h3>"})|raw}}
+						{{widget('content', 'ox-features-4', {"content":'<p>Manage all e-mail accounts centrally in 1 webmail. Also your external accounts such as Gmail and Hotmail. All mails arrive at one place. Very clear.</p>'})|raw}}
+					</li>
+
+					<li>
+						{{widget('content', 'ox-features-5-icon', {"content":'<i class="fa fa-facebook round blue"></i>'})|raw}}
+						{{widget('content', 'ox-features-5-title', {"content":'<h3 class="heading--black">Social media</h3>'})|raw}}
+						{{widget('content', 'ox-features-5', {"content":'<p>Linking social media is easy in Open-Xchange Premium. You can also easily integrate the agreements of your Google Calendar.</p>'})|raw}}
+					</li>
+
+					<li>
+						{{widget('content', 'ox-features-6-icon', {"content":'<i class="fa fa-globe round blue"></i>'})|raw}}
+						{{widget('content', 'ox-features-6-title', {"content":'<h3 class="heading--black">Versatile web application</h3>'})|raw}}
+						{{widget('content', 'ox-features-6', {"content":'<p>With the extensive web application you have all the functions that you are used to with a desktop application. Always available anywhere in the world.</p>'})|raw}}
+					</li>
+				</ul>
+
+				<ul class="client-friendly-cards">
+					<li>
+						{{widget('content', 'ox-features-7-icon', {"content":'<i class="fa fa-filter round blue"></i>'})|raw}}
+						{{widget('content', 'ox-features-7-title', {"content":'<h3 class="heading--black">Spam filter</h3>'})|raw}}
+						{{widget('content', 'ox-features-7', {"content":'<p>Unsolicited e-mail is a thing of the past with SpamExperts Premium. Manage your spam filter, spam quarantine and white and blacklist yourself. Including insight into statistics.</p>'})|raw}}
+					</li>
+
+					<li>
+						{{widget('content', 'ox-features-8-icon', {"content":'<i class="fa fa-life-ring round blue"></i>'})|raw}}
+						{{widget('content', 'ox-features-8-title', {"content":'<h3 class="heading--black">Support</h3>'})|raw}}
+						{{widget('content', 'ox-features-8', {"content":'<p>Do you have a question about Open-Xchange Premium? Feel free to contact our staff via 085 27 33 027.</p>'})|raw}}
+					</li>
+				</ul>
+			</article>
+
+		</div>
+	</section>
+
+        <!-- Template Carousel -->
+        <div class="owl-carousel  template-carousel">
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/ox-images/ox-image-1.jpg')}}" alt="Open-Xchange Feature">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/ox-images/ox-image-2.jpg')}}" alt="Open-Xchange Feature">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/ox-images/ox-image-3.jpg')}}" alt="Open-Xchange Feature">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/ox-images/ox-image-4.jpg')}}" alt="Open-Xchange Feature">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/ox-images/ox-image-5.jpg')}}" alt="Open-Xchange Feature">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/ox-images/ox-image-6.jpg')}}" alt="Open-Xchange Feature">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/ox-images/ox-image-7.jpg')}}" alt="Open-Xchange Feature">
+                </div>
+            </div>
+
+        </div>
+
+	<!-- Section: Benefits -->
+	{{widget('space', 'pagespace2', {'height': '50'})|raw}}
+
+	<div class="container">
+
+		<hgroup class="center">
+			{{widget('content', 'ox-pricing-title', {"content":'<h2>Work even more efficiently from now on!</h2>'})|raw}}
+		</hgroup>
+
+		{{widget('space', 'pagespace3', {'height': '20'})|raw}}
+
+		<div class="smart-wrapper">
+			<div class="smart-pricing">
+				<div class="pricing-tables elegant-style three-colm">
+
+					<div class="colm">
+						<div class="colm-list">
+							<div class="pricing-header header-colored">
+								<h1 class="pricing-color-top-1 blue">{{widget('content', 'ox-pricing-1-title', {'content':'3 USERS'})|raw}}</h1>
+								<h2 class="pricing-color-bottom-1 blue">
+									<span>{{widget('content', 'ox-pricing-1-price', {'content':'€21,00'})|raw}}</span>
+									{{widget('content', 'ox-pricing-1-term', {'content':'Per month'})|raw}}
+								</h2>
+							</div>
+							<ul>
+								{{widget('content', 'ox-pricing-1-features', {'content':'
+									<li>15 GB mailbox disk space</li>
+									<li>6 GB shared storage space</li>
+									<li>Unlimited autoresponders</li>
+								'})|raw}}
+							</ul>
+							<div class="pricing-footer">
+								{{widget('content', 'ox-pricing-1-button', {'content':'<a href="https://portal.sitemakerxl.nl/cart.php?a=add&pid=21" class="pricing-button  pricing-color1-btn blue" role="button">Order now!</a>'})|raw}}
+							</div>
+						</div>
+					</div>
+
+					<div class="colm">
+						<div class="colm-list featured-package">
+							<div class="pricing-header header-colored">
+								<h1 class="pricing-color-top-2 blue">{{widget('content', 'ox-pricing-2-title', {'content':'5 USERS'})|raw}}</h1>
+								<h2 class="pricing-color-bottom-2 blue">
+									<span>{{widget('content', 'ox-pricing-2-price', {'content':'€30,00'})|raw}}</span>
+									{{widget('content', 'ox-pricing-2-term', {'content':'Per month'})|raw}}
+								</h2>
+								<div class="ribbon-large">
+									<!-- <div class="ribbon-inner ribbon-inner-red">POPULAR</div> -->
+								</div>
+							</div>
+							<ul>
+								{{widget('content', 'ox-pricing-2-features', {'content':'
+									<li>25 GB mailbox disk space</li>
+									<li>10 GB shared storage space</li>
+									<li>Unlimited autoresponders</li>
+								'})|raw}}
+							</ul>
+							<div class="pricing-footer">
+								{{widget('content', 'ox-pricing-2-button', {'content':'<a href="https://portal.sitemakerxl.nl/cart.php?a=add&pid=23" class="pricing-button  pricing-color2-btn blue" role="button">Order now!</a>'})|raw}}
+							</div>
+						</div>
+					</div>
+
+					<div class="colm">
+						<div class="colm-list">
+							<div class="pricing-header header-colored">
+								<h1 class="pricing-color-top-3 blue">{{widget('content', 'ox-pricing-3-title', {'content':'10 USERS'})|raw}}</h1>
+								<h2 class="pricing-color-bottom-3 blue">
+									<span>{{widget('content', 'ox-pricing-3-price', {'content':'€50,00'})|raw}}</span>
+									{{widget('content', 'ox-pricing-3-term', {'content':'Per month'})|raw}}
+								</h2>
+							</div>
+							<ul>
+								{{widget('content', 'ox-pricing-3-features', {'content':'
+									<li>50 GB mailbox disk space</li>
+									<li>20 GB shared storage space</li>
+									<li>Unlimited autoresponders</li>
+								'})|raw}}
+							</ul>
+							<div class="pricing-footer">
+								{{widget('content', 'ox-pricing-3-button', {'content':'<a href="https://portal.sitemakerxl.nl/cart.php?a=add&pid=24" class="pricing-button  pricing-color3-btn blue" role="button">Order now!</a>'})|raw}}
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{{widget('space', 'pagespace4', {'height': '10'})|raw}}
+
+	<hgroup class="center">
+		{{widget('content', 'ox-pricing-subtext', {"content":'<p>Need more or fewer users? Feel free to contact us for personal advice.<br>( 085 27 33 027 )</p>'})|raw}}
+	</hgroup>
+
+	{{widget('space', 'pagespace5', {'height': '40'})|raw}}
+
+	<!-- CLIENT FRIENDLY SECTION !-->
+	<section class="client-friendly">
+		<div class="container">
+
+			<!-- CLIENT FRIENDLY TAB CONTENT !-->
+			<article id="client-friendly">
+
+				<hgroup class="center" style="margin-bottom:0;">
+					{{widget('content', 'os-title', {"content":'<h2>Also discover our other services!</h2>'})|raw}}
+				</hgroup>
+
+				<ul class="client-friendly-cards">
+					<li onclick="window.location.href='/tour';">
+						{{widget('content', 'os-smx-icon', {"content":'<i class="fa fa-desktop round large"></i>'})|raw}}
+						{{widget('content', 'os-smx-title', {"content":"<h3 class='heading--black'>Site Maker XL</h3>"})|raw}}
+						{{widget('content', 'os-smx', {"content":'<p>Looking for an affordable website that is easy to keep up with? It is possible! <u>Try it now for free</u>.</p>'})|raw}}
+					</li>
+
+					<li onclick="window.location.href='/seo';">
+						{{widget('content', 'os-seo-icon', {"content":'<i class="fa fa-search round large"></i>'})|raw}}
+						{{widget('content', 'os-seo-title', {"content":'<h3 class="heading--black">Search Engine Optimalisation</h3>'})|raw}}
+						{{widget('content', 'os-seo', {"content":'<p>With our ranking coach you can optimize your website yourself for search engines. Make sure your website is found! <u>Try for free for 30 days</u>.</p>'})|raw}}
+					</li>
+
+					<li onclick="window.location.href='/cakemail';">
+						{{widget('content', 'os-cm-icon', {"content":'<i class="fa fa-envelope-o round large"></i>'})|raw}}
+						{{widget('content', 'os-cm-title', {"content":'<h3 class="heading--black">Email Marketing</h3>'})|raw}}
+						{{widget('content', 'os-cm', {"content":'<p>Met <u>email marketing</u>you can create and send your newsletters yourself. Choose a free template, change the content and send your newsletter easily.</p>'})|raw}}
+					</li>
+				</ul>
+
+			</article>
+
+		</div>
+	</section>
+
+    <!-- FAQ -->
+    <section class="current-vacancies  section">
+        <div class="container">
+            <div class="res-col columns">
+                 <div class="column span-100">
+
+					<hgroup class="center" style="margin-bottom:0;">
+						{{widget('content', 'seo-faq-title', {"content":'<h2>Frequently asked questions about Open-Xchange Premium.</h2>'})|raw}}
+					</hgroup>
+
+                    <ul class="faq">
+
+                        <!-- FAQ 1 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'ox-faq-question-1', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Does Open-Xchange Premium work with the email program on my Windows computer?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'ox-faq-answer-1', {"content":'
+								<p>
+									<b>Please note</b>: For an optimal user experience, we recommend that you use the <a href="//portal.sitemakerxl.nl/">webmail application</a>. Only for this application we can guarantee full synchronization of email, contacts and calendars. You can use Outlook 2003, 2007 and 2010 if they are installed on Windows 7 or 8. With other versions of Windows or Outlook, it is not yet possible to install Open-Xchange.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 1 -->
+
+                        <!-- FAQ 2 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'ox-faq-question-2', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Does Open-Xchange Premium work with the programs on my Apple computer?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'ox-faq-answer-2', {"content":'
+								<p>
+									<b>Please note</b>: For an optimal user experience, we recommend that you use the <a href="//portal.sitemakerxl.nl/">webmail application</a>. Only for this application we can guarantee full synchronization of email, contacts and calendars. If you want to set up Open-Xchange on your Apple computer, you can use our <a href="#">manual</a>. Unfortunately we do not support Outlook for Mac. You can retrieve your email using the normal IMAP settings. Synchronization of calendars and contacts is not possible.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 2 -->
+
+                        <!-- FAQ 3 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'ox-faq-question-3', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;What is the minimum contract period for Open-Xchange Premium?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'ox-faq-answer-3', {"content":'
+								<p>
+									The minimum contract period for Open-Xchange Premium is 1 year.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 3 -->
+
+                        <!-- FAQ 4 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'ox-faq-question-4', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;How can I connect to Open-Xchange Premium via my mobile phone?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'ox-faq-answer-4', {"content":'
+								<p>
+									Op onze <A href="#">helpdesk pagina</A>you will find the manuals for setting up Open-Xchange Premium on Android, Windows Phone and IOS(iPhone, iPad en iPod Touch).
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 4 -->
+
+                        <!-- FAQ 5 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'ox-faq-question-5', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Can I change the display language of the web application?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'ox-faq-answer-5', {"content":'
+								<p>
+									Yes that is possible. You change the display language from the control panel.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 5 -->
+
+                        <!-- FAQ 6 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'ox-faq-question-6', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;What happens when I switch on &#39;Advanced options&#39;?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'ox-faq-answer-6', {"content":'
+								<p>
+									Enabling &#39;Advanced options&#39; changes the structure of the menu on the left. All the icons that were first only in the top bar can also be found in the left menu after switching on.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 6 -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	{{widget('space', 'pagespace6', {'height': '40'})|raw}}
+
+	<!-- FOOTER !-->
+	{% include '/includes/rd-footer.twig' %}
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+
+<!-- Vimeo video container -->
+<div id="vimeo-pop-container" style="display: none;"><div><span class="vimeo-close" onclick="hideVimeoVideo();"></span></div></div>
+
+<!-- Vimeo video container script -->
+<script>
+	function hideVimeoVideo() {
+		$('#vimeo-pop-container').fadeOut(500);
+		setTimeout(function() {
+			$('#vimeo-pop-container').html('');
+		}, 500);
+	}
+	$('#vimeo-popup-button').click(function() {
+		$('#vimeo-pop-container').html('<div onclick="hideVimeoVideo();"><span class="vimeo-close" onclick="hideVimeoVideo();"></span><iframe width="500" height="281" src="https://player.vimeo.com/video/74212384/?title=1&amp;byline=1&amp;portrait=0&amp;autoplay=1" frameborder="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen=""></iframe></div>');
+		$('#vimeo-pop-container').fadeIn(500);
+	});
+</script>
+<!--// END Vimeo video container script //-->
+
+{% endblock %}

@@ -1,0 +1,367 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/rd-video.twig" %}
+
+<!-- RD Home Page Content -->
+<div class="page-content">
+
+	<!-- SOCIAL MEDIA ACTIE -->
+	{#<div id="sm-actie">#}
+	{#	<div class="container">#}
+	{#		<font>ATTENTION <h4>ATTENTION<h5>ATTENTION</h5></h4></font>#}
+	{#		<h2>Do you want to win a fantastic website worth &#8364;959,-?</h2>#}
+	{#		<a href="/actie">Click here to read how you have a chance!</a>#}
+	{#	</div>#}
+	{#</div>#}
+	<!-- END SOCIAL MEDIA ACTIE -->
+
+    <!-- Section: Facebook Onboarding -->
+    <div class="section  fb-onboarding  alt">
+        <div class="slide-left">
+            <div class="container">
+                <div class="row">
+
+                    <div class="grid-item">
+
+                        <!-- Section Text -->
+                        <article class="section-text">
+                            {{widget('content', 'home-feature-1-title', { content: '<h2>Create anywhere</h2>' })|raw}}
+                            {{widget('content', 'home-feature-1-subtext', { content: '<p>Start your new site from your mobile phone, tablet or browser. Link your company facebook page with your website, without the use of expensive apps.</p>' })|raw}}
+                        </article>
+
+                    </div>
+
+                    <div class="grid-item">
+
+                        <!-- Section Graphic -->
+                        <div class="section-graphic">
+                            <div id="StageOne" class="EDGE-315105869"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Mobile Editor -->
+    <div class="section  mobile-editor">
+        <div class="slide-left">
+            <div class="container">
+                <div class="row">
+
+                    <div class="grid-item">
+
+                        <!-- Section Text -->
+                        <article class="section-text">
+                            <hgroup class="section-text-content">
+                                {{widget('content', 'home-feature-2-title', { content: '<h2>Update your website<br>&#34;on the go&#34;</h2>' })|raw}}
+                                {{widget('content', 'home-feature-2-subtext', { content: '<p>Add photos directly from your mobile phone. Work on your website on the way and share it with the world right away.</p>' })|raw}}
+                            </hgroup>
+                        </article>
+
+                    </div>
+
+                    <div class="grid-item">
+
+                        <!-- Section Graphic -->
+                        <div class="section-graphic">
+                            <div id="StageTwo" class="EDGE-438472265"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Online Store -->
+    <div class="section  online-store  alt">
+        <div class="slide-left">
+            <div class="container">
+                <div class="row">
+
+                    <div class="grid-item">
+
+                        <!-- Section Text -->
+                        <article class="section-text">
+                            <hgroup class="section-text-content">
+                                {{widget('content', 'home-feature-3-title', { content: '<h2>Your webshop online<br> within a few minutes!</h2>' })|raw}}
+                                {{widget('content', 'home-feature-3-subtext', { content: '<p>Create your own webshop within minutes and start selling your products immediately.</p>' })|raw}}
+                            </hgroup>
+                        </article>
+
+                    </div>
+
+                    <div class="grid-item">
+
+                        <!-- Section Graphic -->
+                        <div class="section-graphic">
+                            <div id="StageThree" class="EDGE-426307466"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Templates -->
+    <div class="section  templates">
+        <div class="container-sml">
+
+            <!-- Section Text -->
+            <article class="section-text  alt">
+
+                <div class="slide-top">
+
+                    <div class="flex-container  span-grid--space  vae">
+
+                        <div class="flex-item">
+                            {{widget('content', 'home-templates-subtitle', { content: '<h4><span class="heading--orange">100+ templates</span> and growing!</h4>' })|raw}}
+                            {{widget('content', 'home-templates-title', { content: '<h2 class="space--none">100+ professional<br> designed templates</h2>' })|raw}}
+                        </div>
+                        <div class="flex-item">
+                            {{widget('content', 'home-templates-subtext', { content: '<p>More than 100 professional, responsive website designs to choose from. Easily change the colors, fonts and layouts to make it your own.</p>' })|raw}}
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- Template Carousel -->
+        <div class="owl-carousel  template-carousel">
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/rd-images/template-masonry.jpg')}}" alt="Template: Masonry">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/rd-images/template-nordic.jpg')}}" alt="Template: Nordic">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/rd-images/template-beta.jpg')}}" alt="Template: Beta Studio">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/rd-images/template-unknown.jpg')}}" alt="Template: Unknown">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/rd-images/template-proskip.jpg')}}" alt="Template: ProSkip">
+                </div>
+            </div>
+
+            <div class="template-carousel-slide">
+                <div class="template-carousel-slide-overlay">
+                    <img src="{{asset('images/rd-images/template-arctic.jpg')}}" alt="Template: Masonry">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Section: Partners -->
+    <div class="section  rd-partners  alt">
+        <!-- <div class="slide-left"> -->
+            <div class="container-sml">
+
+                <!-- Section Text -->
+                <article class="section-text  alt">
+                    <div class="flex-container  span-grid--space  vae">
+
+                        <div class="flex-item">
+                            {{widget('content', 'home-companies-subtitle', { content: '<h4><span class="heading--orange">100+ companies</span> and growing!</h4>' })|raw}}
+                            {{widget('content', 'home-companies-title', { content: '<h2 class="space--none">Hundreds of companies<br> choose Site Maker XL</h2>' })|raw}}
+                        </div>
+                        <div class="flex-item">
+                            {{widget('content', 'home-companies-subtext', { content: '<p>Both large companies and independent entrepreneurs have the confidence in Site Maker XL. With support of 20 different languages, Site Maker XL is a worldwide product!</p>' })|raw}}
+                        </div>
+
+					</div>
+				</article>
+
+            </div>
+
+
+            <div class="container-sml">
+
+				<article class="section-text  alt">
+					<div class="flex-container  span-grid--space  vae">
+						<div class="container-sml" style="margin-top:120px;">
+
+							<!-- /////////// BEGIN WIDGET CODE /////////// -->
+								<script language="javascript">
+									var url = 'https://beoordelingen.feedbackcompany.nl/widget/25358.html';
+									document.write(
+										unescape("%3Ciframe scrolling='no' frameborder='0' height='122' width='850' style='display:none;' id='tfcwidget' src='"+ url +"' %3E%3C/iframe%3E")
+									);
+								</script>
+								<img src='https://beoordelingen.feedbackcompany.nl/widget/img/spacer.gif' style='display:none;' onload='document.getElementById("tfcwidget").style.display="block";'>
+							<!--  /////////// EIND WIDGET CODE /////////// -->
+
+						</div>
+					</div>
+                </article>
+
+            </div>
+
+        <!-- </div> -->
+    </div>
+
+    <!-- Section: Benefits -->
+    <div class="section  benefits  center">
+        <div class="slide-bottom">
+            <div class="container-sml">
+
+                <!-- Section Text -->
+                {{widget('content', 'home-start-title', { content: '<h2 class="space--40">Ready for the first step?</h2>' })|raw}}
+                {{widget('content', 'home-start-button', { content: '<a href="/smx-demo" class="button  lrg">Start your website now!</a>' })|raw}}
+
+            </div>
+        </div>
+    </div>
+
+    {% include "includes/rd-footer.twig" %}
+
+</div>
+<!-- End RD Home Page Content -->
+
+
+{% endblock %}
+
+{% block bodyscripts %}
+
+<script src="{{asset('/js/jquery.vide.min.js')}}"></script>
+<script src="{{asset('/js/jquery.fadethis.min.js')}}"></script>
+<script src="{{asset('/js/vimeo-lightbox.js')}}"></script>
+<script src="{{asset('/js/owl.carousel/owl.carousel.min.js')}}"></script>
+<script src="{{asset('/animations/edge_includes/edge.5.0.1.min.js')}}"></script>
+<style>
+    .edgeLoad-EDGE-315105869 { visibility:hidden; }
+    .edgeLoad-EDGE-438472265 { visibility:hidden; }
+    .edgeLoad-EDGE-426307466 { visibility:hidden; }
+</style>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        // Make feature full height
+        $(".rd-video, .rd-video-poster").css("height", $(window).height());
+        $(window).bind("resize",function() {
+            $(".rd-video, .rd-video-poster").css("height", $(window).height());
+        });
+
+        // Fade This
+        $(window).fadeThis({
+            speed: 500,
+            reverse: false
+        });
+
+        // Adobe Edge Runtime: Facebook
+        $('.fb-onboarding').fadeThis({
+            speed: 500,
+            reverse: false,
+            scrolledIn: function () {
+                if (AdobeEdge.getComposition('EDGE-315105869') === undefined) {
+                    var proxy = "{{asset('/animations/facebook/')}}";
+                    AdobeEdge.loadComposition('facebook', 'EDGE-315105869', {
+                    scaleToFit: "both",
+                    centerStage: "horizontal",
+                    minW: "0",
+                    maxW: "900px",
+                    width: "900px",
+                    height: "610px"
+                    }, {dom: [ ]}, {dom: [ ]}, proxy);
+                }
+            }
+        });
+
+        // Adobe Edge Runtime: Mobile Editor
+        $('.mobile-editor').fadeThis({
+            speed: 500,
+            reverse: false,
+            scrolledIn: function () {
+                if (AdobeEdge.getComposition('EDGE-438472265') === undefined) {
+                    var proxy = "{{asset('/animations/mobile-editor/')}}";
+                    AdobeEdge.loadComposition('mobile-editor', 'EDGE-438472265', {
+                    scaleToFit: "width",
+                    centerStage: "horizontal",
+                    minW: "0px",
+                    maxW: "800px",
+                    width: "800px",
+                    height: "600px"
+                    }, {dom: [ ]}, {dom: [ ]}, proxy);
+                }
+            }
+        });
+
+        // Adobe Edge Runtime: Store
+        $('.online-store').fadeThis({
+            speed: 500,
+            reverse: false,
+            scrolledIn: function () {
+                if (AdobeEdge.getComposition('EDGE-426307466') === undefined) {
+                    var proxy = "{{asset('/animations/online-store/')}}";
+                    AdobeEdge.loadComposition('online-store', 'EDGE-426307466', {
+                    scaleToFit: "width",
+                    centerStage: "horizontal",
+                    minW: "0",
+                    maxW: "750px",
+                    width: "700px",
+                    height: "611px"
+                    }, {dom: [ ]}, {dom: [ ]}, proxy);
+                }
+            }
+        });
+
+        // Template Carousel
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            margin: 50,
+            loop: true,
+            stagePadding: 50,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayTimeout: 5000,
+            responsive:{
+                479:{
+                    stagePadding: 0,
+                    margin: 0
+                },
+                650:{
+                    stagePadding: 50
+                },
+                850:{
+                    items: 2
+                },
+                1600:{
+                    items: 3
+                }
+            }
+        });
+    });
+
+</script>
+
+{% endblock %}

@@ -1,0 +1,7 @@
+@color-swatch1 /* Background */
+@color-swatch2 /* SMX Accent */
+@color-swatch3 /* SEO Accent */
+@color-swatch4 /* OX Accent */
+@color-swatch5 /* CM Accent */
+@color-swatch6 /* Other */
+@color-swatch7 /* Dark */

@@ -1,0 +1,19 @@
+{% extends "frame-layout.twig" %}
+
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap">
+
+	<div class="bk-pt-default">
+
+		{% include '/includes/rd-header--alt.twig' %}
+
+		{{zone('main')|raw}}
+
+	</div>
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+{% endblock %}

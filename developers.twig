@@ -1,0 +1,580 @@
+{% extends "dev-layout.twig" %}
+
+{% block content %}
+
+<!-- CONTAINING PAGE WRAP-->
+<div class="page-wrap">
+
+	<!-- HEADER !-->
+	{% include '/includes/rd-header--alt.twig' %}
+
+    <!-- DEVELOPER SIGNUP !-->
+    <section class="dev-feature">
+
+        <!-- INTRO TEXT !-->
+        <div class="dev-feature-text">
+            {{widget('content', 'dev-heading', {"content":'<h2>Building your own website is easier than you think!</h2>'})|raw}}
+            {{widget('content', 'dev-sub-heading', {"content":'<p>Build without ICT Knowledge on your own tablet a mobile friendly website</p>'})|raw}}
+        </div>
+
+        <!-- FEATURE TABS !-->
+        <ul class="dev-feature-tabs">
+            <li class="dev-signup">
+                {{widget('content', 'dev-signup-heading', {"content":'<h3>Build a website yourself</h3>'})|raw}}
+                {{widget('content', 'dev-signup-subheading', {"content":'<p>Now make your own, complete and <br>responsive website.</p>'})|raw}}
+                {{widget('content', 'dev-signup-button', {"content":'<a href="/smx-demo" class="button">Start today!</a>'})|raw}}
+            </li>
+             <li class="help-support">
+                {{widget('content', 'dev-help-heading', {"content":'<h3>Build your website</h3>'})|raw}}
+                {{widget('content', 'dev-help-subheading', {"content":'<p>We can also take care of the building <br>of your website and everything for you.</p>'})|raw}}
+                {{widget('content', 'dev-help-button', {"content":'<a href="/website-laten-bouwen" class="button blue" target="_blank">Have your website built</a>'})|raw}}
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- DEVELOPER LOVE SECTION !-->
+    <section class="dev-love">
+        <div class="container">
+
+            <!-- DEVELOPER LOVE TAB CONTENT !-->
+            <section class="dev-love-content clearfix">
+
+                <!-- TIME WASTING SECTION !-->
+                <article id="time-wasting">
+
+                <hgroup class="center">
+					{{widget('content', 'time-wasting-header', {"content":'<h2>Your time is precious</h2>'})|raw}}
+                    {{widget('content', 'time-wasing-subheading', {"content":'<p>A quick setup, and all the tools you need to quickly build a nice website.</p>'})|raw}}
+				</hgroup>
+
+                    <!-- TIME WASTING TABS !-->
+                    <div id="time-tabs" class="clearfix">
+                        <ul class="time-tabs-list-dev">
+                            <li>
+                                <a href="#time-content-1">
+                                    {{widget('content', 'time-list-heading-1', {"content":'<h5>Texts &amp; Pictures</h5>'})|raw}}
+                                    {{widget('content', 'time-list-1', {"content":'<p>Adding content is easily done by dragging it to your page.</p>'})|raw}}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#time-content-2">
+                                    {{widget('content', 'time-list-heading-2', {"content":'<h5>Edit photos online</h5>'})|raw}}
+                                    {{widget('content', 'time-list-2', {"content":'<p>Improve your photos without having to buy expensive software.</p>'})|raw}}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#time-content-3">
+                                    {{widget('content', 'time-list-heading-3', {"content":'<h5>Search engine friendly</h5>'})|raw}}
+                                    {{widget('content', 'time-list-3', {"content":'<p>Stand out at the largest search engines, using our built-in SEO functions.</p>'})|raw}}
+                                </a>
+                            </li>
+                            <li>
+                            <a href="#time-content-4">
+                                {{widget('content', 'time-list-heading-4', {"content":'<h5>Your own webshop</h5>'})|raw}}
+                                {{widget('content', 'time-list-4', {"content":'<p>Setting up your web store can be done quickly and easily by using our e-commerce function.</p>'})|raw}}
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- TIME WASTING TAB CONTENT !-->
+                        <div class="time-tabs-content" >
+                            <div id="time-content-1">
+                                <img src="{{asset('images/developers/dev_time-wasting--1.jpg')}}">
+                            </div>
+                            <div id="time-content-2">
+                                <img src="{{asset('images/developers/dev_time-wasting--2.jpg')}}">
+                            </div>
+                            <div id="time-content-3">
+                                <img src="{{asset('images/developers/dev_time-wasting--3.jpg')}}">
+                            </div>
+                            <div id="time-content-4">
+                                <img src="{{asset('images/developers/dev_time-wasting--4.jpg')}}">
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </section>
+        </div>
+    </section>
+
+
+     <!-- DEVELOPER HOSTING BENEFITS !-->
+    <section class="LightGrey dev-hosting-benefits">
+        <div class="container">
+            <hgroup class="center">
+                {{widget('content', 'dev-benefits-header', {"content":'<h2>Why Site Maker XL?</h2>'})|raw}}
+            </hgroup>
+
+            <!-- HOSTING BENEFITS !-->
+            <div class="hosting-benefits-cards">
+
+                <article>
+                    {{widget('content', 'dev-hosting-1-ico', {"content":'<i class="fa fa-envelope-o round orange"></i>'})|raw}}
+                    {{widget('content', 'dev-hosting-1', {"content":'<h3>Email and Domain Name Extras</h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'dev-hosting-2-ico', {"content":'<i class="fa fa-expand round orange"></i>'})|raw}}
+                    {{widget('content', 'dev-hosting-2', {"content":'<h3>Highest Levels of Uptime</h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'dev-hosting-3-ico', {"content":'<i class="fa fa-dashboard round orange"></i>'})|raw}}
+                    {{widget('content', 'dev-hosting-3', {"content":'<h3>Fast website loading times</h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'dev-hosting-4-ico', {"content":'<i class="fa fa-shopping-cart round orange"></i>'})|raw}}
+                    {{widget('content', 'dev-hosting-4', {"content":'<h3>Flexible WebShop Tools</h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'dev-hosting-5-ico', {"content":'<i class="fa fa-refresh round orange"></i>'})|raw}}
+                    {{widget('content', 'dev-hosting-5', {"content":'<h3>Unlimited Storage<h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'dev-hosting-6-ico', {"content":'<i class="fa fa-lock round orange"></i>'})|raw}}
+                    {{widget('content', 'dev-hosting-6', {"content":'<h3>Secure Data Centers</h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'dev-hosting-7-ico', {"content":'<i class="fa fa-star-o round orange"></i>'})|raw}}
+                    {{widget('content', 'dev-hosting-7', {"content":'<h3>Award winning Webhosting Services</h3>'})|raw}}
+                </article>
+
+                <article>
+                    {{widget('content', 'dev-hosting-8-ico', {"content":'<i class="fa fa-users round orange"></i>'})|raw}}
+                    {{widget('content', 'dev-hosting-8', {"content":'<h3>Trusted by Hundreds of Customers</h3>'})|raw}}
+                </article>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FLEXIBILITY CONTROL SECTION !-->
+    <section class="flexibility-control">
+        <div class="container">
+
+        <!-- FLEXIBILITY TAB CONTENT !-->
+        <article class="res-col columns span-30-70" id="flexibility">
+
+        <hgroup class="center">
+            {{widget('content', 'flexibility-header', {"content":'<h2>Flexibility &amp; control</h2>'})|raw}}
+            {{widget('content', 'flexbility-subheader', {"content":'<p>It&apos;s your company, so you decide how your website will look like.</p>'})|raw}}
+        </hgroup>
+
+            <!-- FLEXIBILITY THREE SIMPLE STEPS !-->
+            <ul class="res-col columns span-30-31-30 dev-steps">
+                <li class="column span-three-left">
+                    <img src="{{asset('images/developers/our-themes.jpg')}}">
+                    {{widget('content', 'flex-steps-1', {"content":'<h3><b>High </b> in the search engines</h3>'})|raw}}
+                    {{widget('content', 'flex-list-1', {"content":'<p>With us you do not have to be an expert to create your own SEO friendly website. Our simple tools help you in every phase of your website.</p>'})|raw}}
+                </li>
+                <li class="column span-three-middle">
+                    <img src="{{asset('images/developers/tweak-themes.jpg')}}">
+                    {{widget('content', 'flex-steps-2', {"content":'<h3><b>Mobile </b> and tablet optimized</h3>'})|raw}}
+                    {{widget('content', 'flex-list-2', {"content":'<p>More people than ever surf the Internet from a mobile device. A Site Maker XL website automatically adjusts to the size of your screen.</p>'})|raw}}
+                </li>
+                <li class="column span-three-right">
+                    <img src="{{asset('images/developers/your-themes.jpg')}}">
+                    {{widget('content', 'flex-steps-3', {"content":'<h3><b>Social </b> connected</h3>'})|raw}}
+                    {{widget('content', 'flex-list-3', {"content":'<p>Intervene your social networks in your website with social icons, a Twitter feed, Facebook Like box, and other simple social instruments.</p>'})|raw}}
+                </li>
+            </ul>
+        </article>
+
+        </div>
+    </section>
+
+
+	<div class="container">
+
+		<div class="smart-wrapper">
+            <div class="smart-pricing">
+				<div class="pricing-tables elegant-style three-colm">
+
+					<div class="colm">
+						<div class="colm-list">
+							<div class="pricing-header header-colored">
+								<h1 class="pricing-color-top-1 orange">{{widget('content', 'seo-pricing-1-title', {'content':'BASIC'})|raw}}</h1>
+								<h2 class="pricing-color-bottom-1 orange">
+									<span>{{widget('content', 'seo-pricing-1-price', {'content':'€9,50'})|raw}}</span>
+									{{widget('content', 'seo-pricing-1-term', {'content':'Per month'})|raw}}
+								</h2>
+							</div>
+							<ul>
+								{{widget('content', 'seo-pricing-1-features', {'content':'
+									<li>5 pages</li>
+									<li>Social Media Integration: </br>Facebook, Twitter, Linked-in &amp; Youtube</li>
+									<li>Weblog</li>
+									<li>3 Webshop Products</li>
+									<li>3 Standard Images</li>
+									<li>100+ Templates</li>
+									<li><del>Free Domain name</del></li>
+									<li><del>Online Menu</del></li>
+								'})|raw}}
+							</ul>
+							<div class="pricing-footer">
+								{{widget('content', 'seo-pricing-1-button', {'content':'<a href="https://portal.sitemakerxl.nl/cart.php?a=add&pid=21" class="pricing-button  pricing-color1-btn orange" role="button">Order now!</a>'})|raw}}
+							</div>
+						</div>
+					</div>
+
+					<div class="colm">
+						<div class="colm-list featured-package">
+							<div class="pricing-header header-colored">
+								<h1 class="pricing-color-top-2 orange">{{widget('content', 'seo-pricing-2-title', {'content':'BUSINESS'})|raw}}</h1>
+								<h2 class="pricing-color-bottom-2 orange">
+									<span>{{widget('content', 'seo-pricing-2-price', {'content':'€17,50'})|raw}}</span>
+									{{widget('content', 'seo-pricing-2-term', {'content':'Per month'})|raw}}
+								</h2>
+								<div class="ribbon-large">
+									<div class="ribbon-inner ribbon-inner-grey">POPULAR</div>
+								</div>
+							</div>
+							<ul>
+								{{widget('content', 'seo-pricing-2-features', {'content':'
+									<li>10 pages</li>
+									<li>Social Media Integration: </br>Facebook, Twitter, Linked-in &amp; Youtube</li>
+									<li>Weblog</li>
+									<li>5 Webshop Products</li>
+									<li>3 Standard Images</li>
+									<li>100+ Templates</li>
+									<li>Free Domain name</li>
+									<li><del>Online Menu</del></li>
+								'})|raw}}
+							</ul>
+							<div class="pricing-footer">
+								{{widget('content', 'seo-pricing-2-button', {'content':'<a href="https://portal.sitemakerxl.nl/cart.php?a=add&pid=23" class="pricing-button  pricing-color2-btn orange" role="button">Order now!</a>'})|raw}}
+							</div>
+						</div>
+					</div>
+
+					<div class="colm">
+						<div class="colm-list">
+							<div class="pricing-header header-colored">
+								<h1 class="pricing-color-top-3 orange">{{widget('content', 'seo-pricing-3-title', {'content':'ENTERPRISE'})|raw}}</h1>
+								<h2 class="pricing-color-bottom-3 orange">
+									<span>{{widget('content', 'seo-pricing-3-price', {'content':'€24,50'})|raw}}</span>
+									{{widget('content', 'seo-pricing-3-term', {'content':'Per month'})|raw}}
+								</h2>
+							</div>
+							<ul>
+								{{widget('content', 'seo-pricing-3-features', {'content':'
+									<li>Unlimited Aantal pages</li>
+									<li>Social Media Integration: </br>Facebook, Twitter, Linked-in &amp; Youtube</li>
+									<li>Weblog</li>
+									<li>Unlimited Webshop Products</li>
+									<li>10 Standard Images</li>
+									<li>100+ Templates</li>
+									<li>Free Domain name</li>
+									<li>Online Menu</li>
+								'})|raw}}
+							</ul>
+							<div class="pricing-footer">
+								{{widget('content', 'seo-pricing-3-button', {'content':'<a href="https://portal.sitemakerxl.nl/cart.php?a=add&pid=24" class="pricing-button  pricing-color3-btn orange" role="button">Order now!</a>'})|raw}}
+							</div>
+						</div>
+					</div>
+
+				</div>
+            </div>
+         </div>
+    </div>
+
+
+    <!-- CLIENT FRIENDLY SECTION !-->
+    <section class="client-friendly">
+        <div class="container">
+
+            <!-- CLIENT FRIENDLY TAB CONTENT !-->
+            <article id="client-friendly">
+
+                <hgroup class="center">
+                    {{widget('content', 'client-header', {"content":'<h2>Your time is precious!</h2>'})|raw}}
+                    {{widget('content', 'client-header-subheading', {"content":'<p>Time is money right? That&apos;s why we make it as easy as possible for you.</p>'})|raw}}
+                </hgroup>
+
+            <ul class="client-friendly-cards">
+                <li>
+                    {{widget('content', 'client-list-ico-1', {"content":'<i class="fa fa-cloud-upload round orange"></i>'})|raw}}
+                    {{widget('content', 'client-list-heading-1', {"content":'<h3 class="heading--black">Gemakkelijk CMS</h3>'})|raw}}
+                    {{widget('content', 'client-list-1', {"content":'<p>Drag and drop text, images, forms, videos and social content quickly and easily to any page.<p>'})|raw}}
+                </li>
+
+                <li>
+                    {{widget('content', 'client-list-ico-2', {"content":'<i class="fa fa-mobile round orange"></i>'})|raw}}
+                    {{widget('content', 'client-list-heading-2', {"content":'<h3 class="heading--black">Fully Responsive</h3>'})|raw}}
+                    {{widget('content', 'client-list-2', {"content":'<p>Customers can preview their site over multiple screen sizes and devices.</p>'})|raw}}
+                </li>
+
+                <li>
+                    {{widget('content', 'client-list-ico-3', {"content":'<i class="fa fa-pencil round orange"></i>'})|raw}}
+                    {{widget('content', 'client-list-heading-3', {"content":'<h3 class="heading--black">Edit anywhere</h3>'})|raw}}
+                    {{widget('content', 'client-list-3', {"content":'<p>Immediately view added content without leaving the editor.</p>'})|raw}}
+                </li>
+            </ul>
+
+            <ul class="client-friendly-cards">
+                <li>
+                    {{widget('content', 'client-list-ico-4', {"content":'<i class="fa fa-bar-chart round orange"></i>'})|raw}}
+                    {{widget('content', 'client-list-heading-4', {"content":'<h3 class="heading--black">Adaptable</h3>'})|raw}}
+                    {{widget('content', 'client-list-4', {"content":'<p>With the web shop and the blog functions, your website can grow with your company.</p>'})|raw}}
+                </li>
+
+                <li>
+                    {{widget('content', 'client-list-ico-5', {"content":'<i class="fa fa-life-ring round orange"></i>'})|raw}}
+                    {{widget('content', 'client-list-heading-5', {"content":'<h3 class="heading--black">Free support</h3>'})|raw}}
+                    {{widget('content', 'client-list-5', {"content":'<p>Whether you prefer support via the telephone or via e-mail, everything is possible!</p>'})|raw}}
+                </li>
+
+                <li>
+                    {{widget('content', 'client-list-ico-6', {"content":'<i class="fa fa-globe round orange"></i>'})|raw}}
+                    {{widget('content', 'client-list-heading-6', {"content":'<h3 class="heading--black">Easily add Domains</h3>'})|raw}}
+                    {{widget('content', 'client-list-6', {"content":'<p>Our platform works with every domain name, new or purchased from another hosting company.</p>'})|raw}}
+                </li>
+            </ul>
+        </article>
+
+			<!-- Section: Benefits -->
+		<div class="section  benefits  center">
+			<div class="slide-bottom">
+				<div class="container-sml">
+
+					<!-- Section Text -->
+					{{widget('content', 'dev-start-title', {"content":'<h2 class="space--40">Build your website now!</h2>'})|raw}}
+					{{widget('content', 'dev-start-button', {"content":'<a href="/smx-demo" class="button  lrg">Start today!</a>'})|raw}}
+
+				</div>
+			</div>
+		</div>
+
+    </div>
+</section>
+
+	<!-- CLIENT FRIENDLY SECTION !-->
+	<section class="client-friendly">
+		<div class="container">
+
+			<!-- CLIENT FRIENDLY TAB CONTENT !-->
+			<article id="client-friendly">
+
+				<hgroup class="center" style="margin-bottom:0;">
+					{{widget('content', 'os-title', {"content":'<h2>Discover also our other services!</h2>'})|raw}}
+				</hgroup>
+
+				<ul class="client-friendly-cards">
+					<li onclick="window.location.href='/seo';">
+						{{widget('content', 'os-seo-icon', {"content":'<i class="fa fa-search round large"></i>'})|raw}}
+						{{widget('content', 'os-seo-title', {"content":'<h3 class="heading--black">Search Engine Optimalisation</h3>'})|raw}}
+						{{widget('content', 'os-seo', {"content":'<p>With our ranking coach you can optimize your website for search engines yourself. Make sure your website is found!<u>Try for free for 30 days</u>.</p>'})|raw}}
+					</li>
+
+					<li onclick="window.location.href='/ox';">
+						{{widget('content', 'os-ox-icon', {"content":'<i class="fa fa-exchange round large"></i>'})|raw}}
+						{{widget('content', 'os-ox-title', {"content":"<h3 class='heading--black'>Open-Xchange</h3>"})|raw}}
+						{{widget('content', 'os-ox', {"content":'<p>Your email, calendar and contacts in one place. Work more efficiently with Open-Xchange. <u>Click here for more info</u>.</p>'})|raw}}
+					</li>
+
+					<li onclick="window.location.href='/cakemail';">
+						{{widget('content', 'os-cm-icon', {"content":'<i class="fa fa-envelope-o round large"></i>'})|raw}}
+						{{widget('content', 'os-cm-title', {"content":'<h3 class="heading--black">E-mail Marketing</h3>'})|raw}}
+						{{widget('content', 'os-cm', {"content":'<p>With <u>e-mail marketing</u>you can create and send your newsletters yourself. Choose a free template, change the content and send your newsletter easily.</p>'})|raw}}
+					</li>
+				</ul>
+
+			</article>
+
+		</div>
+	</section>
+
+    <!-- FAQ -->
+    <section class="current-vacancies  section">
+        <div class="container">
+            <div class="res-col columns">
+                 <div class="column span-100">
+
+					<hgroup class="center" style="margin-bottom:0;">
+						{{widget('content', 'seo-faq-title', {"content":'<h2>Frequently asked questions about Site Maker XL.</h2>'})|raw}}
+					</hgroup>
+
+                    <ul class="faq">
+
+                        <!-- FAQ 1 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'smx-faq-question-1', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;What is the minimum contract period for Site Maker XL?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'smx-faq-answer-1', {"content":'
+								<p>
+                                    The minimum contract period for Site Maker XL is 1 year.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 1 -->
+
+                        <!-- FAQ 2 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'smx-faq-question-2', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;How can I publish my website?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'smx-faq-answer-2', {"content":'
+								<p>
+                                    Click on the &#39;Publish&#39; button in the editor at the top of the page. To publish your website to an external domain (eg: www.my-domain.com) you need a paid account.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 2 -->
+
+                        <!-- FAQ 3 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'smx-faq-question-3', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;How do I link my domain to my website?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'smx-faq-answer-3', {"content":'
+								<p>
+									<ul>
+										<li>Click the &#39;Management&#39; button in the menu on the left.</li>
+										<li>Then click on &#39;Link domain&#39;.</li>
+										<li>If you have purchased a domain through another party, follow the steps as indicated on the screen.</li>
+									</ul>
+                                    It is also possible to purchase a domain directly via the &#39;buy in the store&#39; link at the top of the page.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 3 -->
+
+                        <!-- FAQ 4 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'smx-faq-question-4', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Why is my website not looking the same in different browsers?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'smx-faq-answer-4', {"content":'
+								<p>
+                                    Each web browser reads codes in a different way, but in general your website looks the same in modern web browsers such as Internet Explorer (after version 8), Google Chrome, Firefox and Safari. If you discover differences on your website in different browsers, try the latest version of <a href="https://get.adobe.com/en/flashplayer/" target="_blank"> Flash Player </a> to install and empty the cache of your browser.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 4 -->
+
+                        <!-- FAQ 5 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'smx-faq-question-5', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;My website is not yet available on Google, what can I do about this?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'smx-faq-answer-5', {"content":'
+								<p>
+                                    It usually takes a while before a new website can be found on Google, because Google needs the time to let their &#39;robots&#39;, &#39;spiders&#39; or &#39;crawlers&#39; read all pages of a website. What you can do is <a href="https://www.google.com/webmasters/tools/submit-url?continue=/addurl" target="_blank"> Invite Google </a> to index your website or read out.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 5 -->
+
+                        <!-- FAQ 6 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'smx-faq-question-6', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;How can I download and/or transfer my website to another host?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'smx-faq-answer-6', {"content":'
+								<p>
+                                    It is not possible to download a website built in the editor, transfer it to another hosting company or pass it on to an individual.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 6 -->
+
+                        <!-- FAQ 7 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'smx-faq-question-7', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Can I link a domain from Site Maker XL to a website outside Site Maker XL?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'smx-faq-answer-7', {"content":'
+								<p>
+                                    No, this is not possible. You can submit a request to transfer your domain two months after purchasing your domain.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 7 -->
+
+                        <!-- FAQ 8 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'smx-faq-question-8', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Why can&apos;t I view a page in the editor?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'smx-faq-answer-8', {"content":'
+								<p>
+                                    When inserting a self-written script, it is possible to make the editor unusable. We recommend <b>not</b> to add self-created scripts to your website if you can&apos;t program. If you contact the support team to help you, we encourage you to include the exact piece of script in the application. If you do not do this, we may not be able to help you.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 8 -->
+
+                        <!-- FAQ 9 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'smx-faq-question-9', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;How can I debug my script?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'smx-faq-answer-9', {"content":'
+								<p>
+                                    It is not possible to debug third party scripts.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 9 -->
+
+                        <!-- FAQ 10 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'smx-faq-question-10', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Is it possible to insert JavaScript and PHP?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'smx-faq-answer-10', {"content":'
+								<p>
+                                    It is possible to insert JavaScript into your website, but we take <b>no</b> responsibility when your website gets damaged by inserting scripts. Adding PHP scripts to your website is not possible. Before adding scripts to your website it is necessary that you know how to program.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 10 -->
+
+                        <!-- FAQ 11 -->
+                        <li class="faq-accordian-expand">
+                            {{widget('content', 'smx-faq-question-11', {"content":'<h4><i class="fa fa-plus"></i>&#160;&#160;Will my website be published in PHP, HTML or ASP.NET?</h4>'})|raw}}
+                        </li>
+
+                        <div class="faq-answer">
+                            {{widget('content', 'smx-faq-answer-11', {"content":'
+								<p>
+                                    Your website will be published in HTML.
+								</p>
+							'})|raw}}
+                        </div>
+						<!-- END FAQ 11 -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER !-->
+    {% include '/includes/rd-footer.twig' %}
+
+<!-- END CONTAINING PAGE WRAP-->
+</div>
+
+{% endblock %}
